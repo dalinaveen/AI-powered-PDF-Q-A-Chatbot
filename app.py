@@ -42,5 +42,6 @@ if upload_file:
     st.subheader("💬 Ask questions about your PDF")
     user_question = st.text_input("type your question here..")
     if user_question:
-        response =query_engin.query(user_question)
+        professional_query = f"Answer the following question professionally:\n{user_question}"
+        response =query_engin.query(professional_query)
         st.write(response.response)
