@@ -1,8 +1,8 @@
 import os
 import streamlit as st
 from llama_index.llms.groq import Groq
-from llama_index.core import SimpleDirectoryReader,VectorStoreIndex
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.core import SimpleDirectoryReader,VectorStoreIndex
 from dotenv import load_dotenv
 
 load_dotenv()
